@@ -1,0 +1,85 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    font: 16px/1.25em "Poppins", 'Helvetica Neue', serif;
+    font-style: normal;
+    font-weight: normal;
+    background: #fff;
+    /*background: linear-gradient(to right, #ebebeb,  #F5F5F5, #FFFFFF);*/
+    color: #333333;
+}
+
+a {
+  text-decoration: none;
+  background-color: transparent;
+  color: #333333;
+}
+
+a:hover {
+  color:inherit;
+}
+
+nav, section, main, footer, h1, h2, h3, h4, h5, h6, p, ul, li {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+section{
+  position:relative}
+
+.summary:after {
+  padding-top: 150%;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 2;
+  content: "";
+}
+
+.shadow-right:after, .intro-image>img.lazyloaded, .summary:after {
+  position: absolute;
+  box-shadow: 5px 31px 85px 23px rgba(0,0,0,0.07);
+}
+
+/*top-bar*/
+.chinese {
+  font-family: 'helvetica neue', serif;
+  font-weight: lighter;
+  font-size: 1em;
+}
+
+.row {
+  max-width: none;
+}
+
+.top-bar {
+  background-color: transparent;
+}
+
+.top-bar ul {
+  background-color: transparent;
+}
+
+.menu {
+  font-family: 'poppins';
+  font-size: 1em;
+  padding-top: 15px;
+  background-color: transparent;
+  border-bottom: 1px solid transparent;
+  display: block;
+  position: relative;
+}
+
+.menu > div > div > li > a:hover {
+  font-weight: bold;
+}
+
+/*intro*/
+.intro-image{
+  width: 50%;
+}
