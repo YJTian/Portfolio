@@ -5,77 +5,127 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.1.2/foundation.min.css">
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/foundation/5.5.3/css/foundation.min.css">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,800,600,700,300">
     <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
     <link rel="stylesheet" type="text/css" href="styles/main.css">
-    <link rel="stylesheet" type="text/css" href="styles/landing.css">
-    <link rel="stylesheet" href="css/foundation.css" />
   </head>
   <body>
     <div class="outer">
-      <nav class="top-bar top-bar-fixed-top" role="navigation">
-        <ul class="menu">
-          <div class="row">
-            <div class="small-2 large-offset-2 small-offset-2 columns">
-              <li><a href="#"><span class="chinese" >主页</span> HOME</a></li>
+      <div class="wrap">
+        <nav class="top-bar top-bar-fixed-top" role="navigation">
+          <ul class="menu">
+            <div class="expanded row">
+              <div class="small-2 large-offset-2 small-offset-2 columns nav-gradient">
+                <li><a href="#"><span class="chinese" >主页</span> HOME</a></li>
+              </div>
+              <div class="small-2 columns nav-gradient-non">
+                <li><a href="#"><span class="chinese" >关于我</span> ABOUT</a></li>
+              </div>
+              <div class="small-2 columns nav-gradient-non">
+                <li><a href="#"><span class="chinese" >设计流程</span> PROCESS</a></li>
+              </div>
+              <div class="small-2 columns nav-gradient-non">
+                <li><a href="#"><span class="chinese" >联系我</span> CONTACT</a></li>
+              </div>
+              <div class="columns"></div>
             </div>
-            <div class="small-2 columns">
-              <li><a href="#"><span class="chinese" >关于我</span> ABOUT</a></li>
+          </ul>
+        </nav>
+        <main>
+          <section class="intro">
+            <div class="intro-image image-center hidden-mobile">
+          		<img src="assets/intro-1.png"/>
+          	</div>
+            <div class="intro-image image-right hidden-mobile">
+          		<img src="assets/intro-2.png"/>
+          	</div>
+            <div class="intro-text intro-right">
+            		<span class="line-through"><p>CHICAGO, USA</p></span>
+          	</div>
+            <div class="intro-text intro-left">
+          		<p>UX/UI DESIGNER BASED IN BEIJING, CHINA.</p>
+          	</div>
+          	<div class="intro-text myname">
+          		<h1>Yijie Tian</h1>
+          	</div>
+            <div class="shadow"></div>
+          </section>
+          <section class="works">
+            <div class="columns title-wrap">
+              <div class="large-6 large-offset-6 columns">
+                <h2 class="title-lg title-link gradient">
+            			<p>WORK</p>
+            		</h2>
+              </div>
             </div>
-            <div class="small-2 columns">
-              <li><a href="#"><span class="chinese" >设计流程</span> PROCESS</a></li>
+            <div class="columns case-wrap">
+              <div class ="case-visual">
+                <img class="work-image aerospec" src="assets/AS-1.png" width="535px"/>
+              </div>
+              <div class ="case-content">
+                <div class="title-case">
+                  <a><h3>AeroSolar</h3></a>
+                  <h5>SAAS+ Web Application</h5>
+                </div>
+                <div class="features-loader" style="background-image: linear-gradient(-123deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 89%);">
+          				<div class="features-progress" style="width: calc(0px + 100%);"></div>
+          			</div>
+                <div class="description-case">
+                  <p>Aerospec Technologies is a Houston-based UAS technology company collects high-quality data in the energy industry.</p>
+                  <p>Create UX deliverables for a platform that uses geolocation to identify problems in solar panels.</p>
+                  <a href="#" class="text-link"><p>See the design process...</p></a>
+                </div>
+              </div>
             </div>
-            <div class="small-2 columns">
-              <li><a href="#"><span class="chinese" >联系我</span> CONTACT</a></li>
+            <div class="columns title-wrap">
+              <div class="large-6 large-offset-6 columns">
+                <h2 class="title-lg title-link gradient">
+            			<p>CASE STUDY</p>
+            		</h2>
+              </div>
             </div>
-            <div class="columns"></div>
-          </div>
-        </ul>
-      </nav>
-      <main>
-        <section class="intro">
-          <div class="media-object">
-            <div class="media-object-section middle intro-image">
-
+            <div class="columns case-wrap">
+              <div class ="small-6 columns">
+                <div class="img-wrap">
+                  <img class="work-image surveymatch" src="asssets/SM.png"/>
+                </div>
+              </div>
+              <div class ="small-6 columns">
+                <div class="description-case">
+                  <p>Design of a online survey platform to create and publish surveys to target audience, and earn cash rewards by taking surveys.</p>
+                  <a class="text-link"><p>See the design process...</p></a>
+                </div>
+              </div>
             </div>
-          </div>
-        </section>
-        <section class="work">
-          <div class="row">
-            <div class ="small-6 columns">
+            <div class="columns case-wrap">
+              <div class ="small-6 columns">
+                <div class="img-wrap">
+                  <img class="work-image movingsale" src="assets/MS.png"/>
+                </div>
+              </div>
+              <div class ="small-6 columns">
+                <div class="description-case">
+                  <p>Design of an ios application for online trading, which focuses on building a healthy and efficient way of communication among buyers and sellers.</p>
+                  <a class="text-link"><p>See the design process...</p></a>
+                </div>
+              </div>
             </div>
-            <div class ="small-6 columns">
-            </div>
-          </div>
-          <div class="row">
-            <div class ="small-6 columns">
-            </div>
-            <div class ="small-6 columns">
-            </div>
-          </div>
-          <div class="row">
-            <div class ="small-6 columns">
-            </div>
-            <div class ="small-6 columns">
-            </div>
-          </div>
-        </section>
-        <section class="getintouch">
-        </section>
-      </main>
-      <footer>
-
-      </footer>
+            </section>
+          </section>
+        </main>
+        <footer>
+          <ul class="sociallinks"></ul>
+        </footer>
+      </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/foundation/6.1.2/foundation.min.js"></script>
-    <script src="js/vendor/jquery.min.js"></script>
-    <script src="js/vendor/what-input.min.js"></script>
-    <script src="js/foundation.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/foundation/5.5.3/js/foundation.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/foundation/5.5.3/js/vendor/modernizr.js"></script>
     <script>
-      $(document).foundation();
+      $(document).ready(function() {
+        $(document).foundation();
+      })
     </script>
-
   </body>
 </html>

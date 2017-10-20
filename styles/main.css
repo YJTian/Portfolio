@@ -1,13 +1,66 @@
+@import 'foundation';
+@include foundation-flex-grid;
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+
 html, body {
     margin: 0;
     padding: 0;
     min-height: 100%;
-    font: 16px/1.25em "Poppins", 'Helvetica Neue', serif;
+    font-size: 13px;
+    line-height: 1.25;
+    font-family: 'Times New Roman',Times,serif;
     font-style: normal;
     font-weight: normal;
-    background: #fff;
-    /*background: linear-gradient(to right, #ebebeb,  #F5F5F5, #FFFFFF);*/
+    background: linear-gradient(to right, #ebebeb,  #FCFCFC 10%, #FFFFFF);
     color: #333333;
+    display: block;
+    height:inherit;
+}
+
+body{
+  -webkit-transition:background-color 0.5s;
+  transition:background-color 0.5s
+}
+
+nav, section, main, footer, div, h1, h2, h3, h4, h5, h6, p, ul, li {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins','Helvetica Neue','Roboto','Arial',serif;
+  font-weight: bold;
+  color: #333333;
+  text-rendering: optimizeLegibility;
+  margin-top: 0;
+  margin-bottom: .5rem;
+  line-height: 1.4;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+section{
+  position:relative;
+}
+
+div {
+  display: block;
+}
+
+p:not(:last-child) {
+    margin-bottom: 1em;
 }
 
 a {
@@ -20,30 +73,22 @@ a:hover {
   color:inherit;
 }
 
-nav, section, main, footer, h1, h2, h3, h4, h5, h6, p, ul, li {
-  display: block;
-  margin: 0;
-  padding: 0;
-  font-style: normal;
-  font-weight: normal;
-  text-decoration: none;
+.section-wrap {margin-bottom: 16.67%}
+
+.row {
+    max-width: 100%;
 }
 
-section{
-  position:relative}
-
-.summary:after {
-  padding-top: 150%;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  z-index: 2;
-  content: "";
+/*outer*/
+.outer {
+  padding: 10px 40px 0;
+  overflow-x: hidden;
 }
 
-.shadow-right:after, .intro-image>img.lazyloaded, .summary:after {
-  position: absolute;
-  box-shadow: 5px 31px 85px 23px rgba(0,0,0,0.07);
+.wrap {
+  position: relative;
+  margin: 0 30px;
+  min-height: 100%;
 }
 
 /*top-bar*/
@@ -75,11 +120,287 @@ section{
   position: relative;
 }
 
-.menu > div > div > li > a:hover {
+/*.menu > div > div > li > a:hover {
   font-weight: bold;
+}*/
+
+.nav-gradient:before {
+  width: 60%;
+  height: 3px;
+  margin-bottom:0;
+  display: block;
+  background-image: linear-gradient(123deg, #262C58 0%,#88B04B 45%,#262C58 89%);
+  background-size: 200%;
+  content: "";
+}
+
+.nav-gradient-non:before{
+  width: 60%;
+  height: 3px;
+  margin-bottom:0;
+  display: block;
+  background-color: transparent ;
+  background-size: 200%;
+  content: "";
 }
 
 /*intro*/
-.intro-image{
+.intro {
+  position: relative;
+  padding-top: 72.92%;
+  z-index: 4;
+  margin: 0;
+  font-family: 'helvetica';
+}
+
+.intro-image, .intro-text {
+  position: absolute;
+}
+
+.intro-right {
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  text-decoration: line-through;
+  z-index: 1;
+}
+
+.intro-right > span > p {
+  margin-top: 36%;
+  font-size: 1.25rem;
+}
+
+.line-through{
+  font-size: 4em;
+  line-height: 1.25em;
+  position: relative;
+}
+
+.line-through::after {
+  border-bottom: 0.125em solid red;
+  content: "";
+  left: 0;
+  margin-top: calc(0.125em / 2 * -1);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  background: #88B04B;
+}
+
+.intro-left {
+  top: 0;
+  left: 0;
+  width: 49%;
+  height: 100%;
+  text-align: right;
+  z-index: 0;
+}
+
+.intro-left > p {
+  margin-top: 36%;
+  font-size: 1.25rem;
+}
+
+.myname {
+  top:0;
+  width: 100%;
+  z-index: 0;
+}
+
+.myname > h1 {
+  text-align: center;
+  margin-top: 23.8%;
+  font-family: 'Poppins', 'Roboto', 'Helvetica Neue', 'Arial', serif;
+  font-weight: 600;
+  font-size: 4.25rem;
+  letter-spacing: 18px;
+}
+
+.image-center {
+  height: 80%;
+  width: 100%;
+  top: 0;
+  z-index: -1;
+}
+
+.image-center > img {
+  width: 25%;
+  position: relative;
+  margin: 12% auto;
+}
+
+.image-right {
+  width: 30%;
+  top: 28%;
+  right: 21.5%;
+  z-index: -1;
+}
+
+
+
+/*work*/
+/*work-title*/
+.gradient:before {
+  width: 30px;
+  height: 2px;
+  margin-bottom: 0;
+  display: block;
+  width: 196px;
+  height: 7px;
+  background-image: linear-gradient(123deg, #262C58 0%,#88B04B 45%,#262C58 89%);
+  background-size: 200%;
+  content: "";
+}
+
+/*work-case*/
+.case-wrap {
+  margin-bottom: 16.67%;
+  padding-top: 12.36%;
+}
+
+
+.columns {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.title-vertical {
+	position: fixed;
+	top: 50%;
+	left: 30px;
+	opacity: 0;
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s
+ }
+
+ .title-vertical.active {
+   opacity: 1
+ }
+
+.title-vertical>* {
+	letter-spacing: 1px;
+	font-style: italic;
+	-webkit-transform: translateX(-50%) rotate(-90deg);
+	transform: translateX(-50%) rotate(-90deg);
+	-webkit-transform-origin: top 50%;
+	transform-origin: top 50%
+ }
+
+/*work-case-visual*/
+.case-visual {
+  position: relative;
   width: 50%;
+}
+
+.work-image {
+  position: absolute;
+  box-shadow: 5px 31px 85px 23px rgba(0,0,0,0.07);
+}
+
+.img-wrap {
+  position:relative;
+  padding:auto;
+  margin:auto;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%
+ }
+
+.image-wrap > img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+img{
+    display: block;
+    width: 100%;
+    border: 0;
+}
+
+/*work-case-content*/
+.case-content {
+  position: relative;
+  padding: 0 10.83%;
+  width: 50%;
+  z-index: 4;
+}
+
+.title-case {
+  margin-bottom: 14.71%;
+  padding-top: 35%;
+}
+
+.title-case > a > h3 {
+  font: 'arial','Helvetica', "Roboto" serif;
+}
+
+.features-loader {
+    position: relative;
+    margin: 15px 0 40px;
+    width: 100%;
+    height: 5px;
+    background-color: #000;
+}
+
+.description-case {
+    position: relative;
+    margin-top: 12px;
+    width: 200px;
+    height: 210px;
+}
+
+.description-case > p {
+  font-size: 0.7rem;
+  font-style: italic;
+}
+
+
+
+
+
+@media only screen and (max-width: 1200px){
+.outer {
+    padding: 10px 30px 0;
+    overflow-x: hidden;
+}
+
+.wrap {
+    margin: 0 20px;
+}
+.title-vertical {left: 25px}
+}
+
+@media only screen and (max-width: 1000px){
+.outer {
+    padding: 5px 20px 0;
+    overflow-x: hidden;
+}
+
+.wrap {
+    margin: 0 10px;
+}
+.text-link {
+    font-size: 11px;
+}
+.title-vertical {left: 15px}
+}
+
+
+
+@media only screen and (max-width: 767px){
+.outer {
+    padding: 22px 0;
+}
+.wrap {
+    margin: 0 15px;
+}
 }
